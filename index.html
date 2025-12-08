@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lionel Messi Biography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #1c1c1c;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      padding: 0 20px 20px 20px;
+      font-size: 1.05em;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+    }
+
+    .img-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .img-buttons button {
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      cursor: pointer;
+      font-size: 1.3em;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .img-buttons button:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="messi-logo.png" alt="Messi Logo">
+  <h1>Lionel Messi Biography</h1>
+</header>
+
+<!-- Section 1: Early Years -->
+<div class="section">
+  <h2>Early Years and Talent</h2>
+  <div class="image-container">
+    <img id="img0" src="early-years1.jpg" alt="Messi early years">
+    <div class="img-buttons">
+      <button onclick="prevImage(0)">❮</button>
+      <button onclick="nextImage(0)">❯</button>
+    </div>
+  </div>
+  <p>
+    Lionel Andrés Messi was born on June 24, 1987, in Rosario, Argentina. From a young age, he stood out for his talent in football, and his parents quickly noticed his extraordinary abilities. At the age of six, he started playing at a local club called Grandoli, with support from his family and friends. Messi developed rapidly, although he faced growth hormone deficiencies during childhood. In his early years, he played at local academies and already attracted attention with his technical skills, ball control, speed, and agility. At the age of 13, when Barcelona offered to cover his medical expenses and integrate him into their academy, Messi and his family moved to Spain. This was the first step toward becoming a football legend.
+  </p>
+</div>
+
+<!-- Section 2: Barcelona Career -->
+<div class="section">
+  <h2>Barcelona and Global Fame</h2>
+  <div class="image-container">
+    <img id="img1" src="barca1.jpg" alt="Messi Barcelona">
+    <div class="img-buttons">
+      <button onclick="prevImage(1)">❮</button>
+      <button onclick="nextImage(1)">❯</button>
+    </div>
+  </div>
+  <p>
+    Messi made his debut for Barcelona's first team in 2004 and immediately demonstrated his exceptional talent. In his first years, he played a smaller role but soon became a key player. During his career, he scored over 670 goals for the club, winning 10 La Liga titles and 4 UEFA Champions League trophies. His speed, dribbling skills, and finishing ability amazed every opponent. Messi became Barcelona's all-time top scorer and one of the club's iconic figures, winning multiple Ballon d'Or awards. Fans admired his style, dedication, and passion on the pitch.
+  </p>
+</div>
+
+<!-- Section 3: Paris Saint-Germain -->
+<div class="section">
+  <h2>Paris Saint-Germain</h2>
+  <div class="image-container">
+    <img id="img2" src="psg1.jpg" alt="Messi PSG">
+    <div class="img-buttons">
+      <button onclick="prevImage(2)">❮</button>
+      <button onclick="nextImage(2)">❯</button>
+    </div>
+  </div>
+  <p>
+    In the summer of 2021, Messi faced a new challenge when he left Barcelona and joined the French club Paris Saint-Germain. The decision was influenced by the club's financial situation, but Messi quickly adapted to the new environment. Although the playing style in France was different, his technical skills and experience immediately made an impact. During his PSG career, he remained a key player, contributing goals in the league and international matches while continuing to inspire young players worldwide.
+  </p>
+</div>
+
+<!-- Section 4: Argentina National Team and Records -->
+<div class="section">
+  <h2>Argentina National Team and Records</h2>
+  <div class="image-container">
+    <img id="img3" src="argentina1.jpg" alt="Messi Argentina">
+    <div class="img-buttons">
+      <button onclick="prevImage(3)">❮</button>
+      <button onclick="nextImage(3)">❯</button>
+    </div>
+  </div>
+  <p>
+    Lionel Messi also had a legendary career with the Argentina national team. He led the team in World Cups and Copa América tournaments multiple times. In 2021, he finally won the Copa América, bringing joy to Argentina after several close losses in finals. In 2022, he won the FIFA World Cup, permanently etching his name in football history. Messi holds numerous records: most Ballon d'Or awards, most goals for a single club, and most points scored in international matches. Additionally, he has won multiple "best player" awards and became an iconic figure in world football.
+  </p>
+</div>
+
+<script>
+  const bannerImages = [
+    ["early-years1.jpg","early-years2.jpg"],
+    ["barca1.jpg","barca2.jpg"],
+    ["psg1.jpg","psg2.jpg"],
+    ["argentina1.jpg","argentina2.jpg"]
+  ];
+
+  let currentImg = [0,0,0,0];
+
+  function showImage(sectionIndex) {
+    const imgElement = document.getElementById(`img${sectionIndex}`);
+    imgElement.src = bannerImages[sectionIndex][currentImg[sectionIndex]];
+  }
+
+  function nextImage(sectionIndex) {
+    currentImg[sectionIndex] = (currentImg[sectionIndex] + 1) % bannerImages[sectionIndex].length;
+    showImage(sectionIndex);
+  }
+
+  function prevImage(sectionIndex) {
+    currentImg[sectionIndex] = (currentImg[sectionIndex] - 1 + bannerImages[sectionIndex].length) % bannerImages[sectionIndex].length;
+    showImage(sectionIndex);
+  }
+</script>
+
+</body>
+  </html>
